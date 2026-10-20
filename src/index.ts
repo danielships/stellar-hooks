@@ -863,3 +863,16 @@ export { useAddressBook } from "./hooks/useAddressBook";
 export type { UseAddressBookOptions, UseAddressBookReturn } from "./hooks/useAddressBook";
 export { AddressBookStore } from "./utils/addressBook";
 export type { AddressBookEntry } from "./utils/addressBook";
+export {
+  initialWalletState,
+  walletActions,
+  walletReducer,
+  walletSelectors,
+} from "./integrations/walletState";
+export type { WalletState, WalletStatus, WalletBalance, WalletAction } from "./integrations/walletState";
+export { createWalletStore } from "./integrations/zustand";
+export type { WalletStore } from "./integrations/zustand";
+export { createWalletAtoms } from "./integrations/jotai";
+export { walletSlice, walletRootSelectors } from "./integrations/redux";
+export { useSyncWalletState } from "./hooks/useSyncWalletState";
+export type { UseSyncWalletStateOptions } from "./hooks/useSyncWalletState";
